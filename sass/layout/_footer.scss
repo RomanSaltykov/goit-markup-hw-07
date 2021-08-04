@@ -6,9 +6,10 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-
-.address__item:not(:last-child) {
-  margin-bottom: 9px;
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer {

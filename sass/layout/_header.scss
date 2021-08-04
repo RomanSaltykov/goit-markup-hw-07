@@ -88,10 +88,11 @@
     fill: var(--focus-color);
   }
 }
-
-.navigation-list__link:hover,
-.navigation-list__link:focus {
-  color: var(--focus-color);
+.navigation-list__link {
+  &:hover,
+  &:focus {
+    color: var(--focus-color);
+  }
 }
 
 .contacts-list__link {
@@ -110,25 +111,28 @@
 .current {
   color: var(--focus-color);
 }
-
-.s-pseudo::before {
-  display: inline-block;
-  position: absolute;
-  content: '';
-  width: 48px;
-  height: 4px;
-  background-color: var(--focus-color);
-  border-radius: 2px;
-  margin-top: 52px;
+.s-pseudo {
+  &::before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 4px;
+    background-color: var(--focus-color);
+    border-radius: 2px;
+    margin-top: 52px;
+  }
 }
 
-.p-pseudo::before {
-  display: inline-block;
-  position: absolute;
-  content: '';
-  width: 78px;
-  height: 4px;
-  background-color: var(--focus-color);
-  border-radius: 2px;
-  margin-top: 52px;
+.p-pseudo {
+  &::before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 78px;
+    height: 4px;
+    background-color: var(--focus-color);
+    border-radius: 2px;
+    margin-top: 52px;
+  }
 }

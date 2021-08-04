@@ -437,17 +437,6 @@ body {
   margin-bottom: 10px;
 }
 
-.modal__form-term:checked + .modal__check-desk::before {
-  width: 16px;
-  height: 15px;
-  border: 1px solid var(--focus-color);
-  border-radius: 2px;
-  background-color: var(--focus-color);
-  background-repeat: no-repeat;
-  background-image: url("../icomoon/SVG/checked.svg");
-  background-position: center;
-}
-
 .modal__check-desk {
   display: flex;
   align-items: center;
@@ -472,6 +461,17 @@ body {
   /* Internet Explorer/Edge */
   user-select: none;
   margin-bottom: 4px;
+}
+
+.modal__form-term:checked + .modal__check-desk::before {
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--focus-color);
+  border-radius: 2px;
+  background-color: var(--focus-color);
+  background-repeat: no-repeat;
+  background-image: url("../icomoon/SVG/checked.svg");
+  background-position: center;
 }
 
 .modal__form-term:focus + .modal__check-desk::before {
@@ -584,8 +584,7 @@ body {
   fill: var(--focus-color);
 }
 
-.navigation-list__link:hover,
-.navigation-list__link:focus {
+.navigation-list__link:hover, .navigation-list__link:focus {
   color: var(--focus-color);
 }
 

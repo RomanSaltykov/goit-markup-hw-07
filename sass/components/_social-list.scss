@@ -47,9 +47,10 @@
   align-items: center;
   justify-content: space-between;
 }
-
-.social-container__item:not(:last-child) {
-  margin-right: 10px;
+.social-container__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-container__link {
